@@ -22,8 +22,8 @@ jobs:
         java-version: '8'
 
     - name: Build with Maven
-      run: gradle install
-
+      run: ./gradlew build -x test
+      
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v2
       with:
