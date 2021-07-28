@@ -21,7 +21,10 @@ jobs:
       with:
         java-version: '11'
 
-    - name: Build with Maven
+    - name: Build with Wraapper    
+      run: ./gradlew wrapper --gradle-version=7.1-rc-2
+      
+    - name: Build with Gradle
       run: ./gradlew build 
       
     - name: Upload artifact for deployment job
