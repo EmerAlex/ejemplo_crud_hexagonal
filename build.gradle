@@ -23,6 +23,14 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok:1.18.20'
 }
 
+jar {
+   enabled = true
+}
+
+bootJar {
+   classifier = 'application'
+}
+
 test {
 	useJUnitPlatform()
 }
